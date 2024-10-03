@@ -1,0 +1,7 @@
+<!-- app/views/license_data/display.html.erb -->
+
+<h1>Display Data</h1>
+
+<div id="license-data" data-license-data="<%= @license_data.to_json %>"></div>
+
+<%= react_component('LicenseDataDisplay', data: @license_data) %>
